@@ -2,8 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no"> -->
     <script src="build/js/vendor.min.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FUQobotYgcx1w34NEOl4iYNfngNCGIs">
+    </script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <!-- <script src="http://maps.google.com/maps/api/js?"></script> -->
     <title>Splore Cities</title>
@@ -78,7 +82,7 @@
     </div>
 
 <!-- =============== SCRIPTS FOR API ========================= -->
-    <script>
+    <!-- <script>
       function initMap() {
            var myLatLng = {lat: -25.363, lng: 131.044};
 
@@ -96,36 +100,9 @@
              title: 'Hello World!'
            });
          }
-
-    </script>
-    <script async defer
+    </script> -->
+    <!-- <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FUQobotYgcx1w34NEOl4iYNfngNCGIs&callback=initMap">
-    </script>
+    </script> -->
     </body>
 </html>
-
-      <!-- // Try HTML5 geolocation.
-    //   if (navigator.geolocation) {
-    //     navigator.geolocation.getCurrentPosition(function(position) {
-    //       var pos = {
-    //         lat: position.coords.latitude,
-    //         lng: position.coords.longitude
-    //       };
-    //
-    //       infoWindow.setPosition(pos);
-    //       infoWindow.setContent('Location found.');
-    //       map.setCenter(pos);
-    //     }, function() {
-    //       handleLocationError(true, infoWindow, map.getCenter());
-    //     });
-    //   } else {
-    //     // Browser doesn't support Geolocation
-    //     handleLocationError(false, infoWindow, map.getCenter());
-    //   }
-
-    // function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    //   infoWindow.setPosition(pos);
-    //   infoWindow.setContent(browserHasGeolocation ?
-    //     'Error: The Geolocation service failed.' :
-    //     'Error: Your browser doesn\'t support geolocation.');
-    // } -->
