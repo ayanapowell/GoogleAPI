@@ -2,7 +2,7 @@ h1 {
   text-align: center;
 }
 
-#map {
+#map, #output {
   height: 500px;
   width: 100%;
 }
