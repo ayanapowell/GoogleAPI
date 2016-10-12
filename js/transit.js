@@ -13,9 +13,8 @@ Transit.prototype.getLines = function() {
       // console.log(typeof(routeNumber[0]));
       results.push(routeNumber);
     }
-    // console.log(results);
-      return results;
   });
+    return results;
 
 }
 
