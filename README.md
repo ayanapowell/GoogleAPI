@@ -6,6 +6,8 @@
 
 ## Description
 
+This web app uses google map and books API's. Users can view an address on a map, enter two addresses and see the route, or search google books by author or title
+
 ## Setup/Installation Requirements
 
 * Clone the repository
