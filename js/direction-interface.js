@@ -4,6 +4,7 @@ $(document).ready(function() {
   var newDirection = new Direction();
   $("#direction-form").submit(function(event) {
     event.preventDefault();
+    $("#error").empty();
     var origin = $('#origin').val();
     var destination = $('#destination').val();
     var mode = "driving";

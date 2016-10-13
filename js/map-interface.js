@@ -2,6 +2,7 @@ var Map = require('./../js/map.js').mapModule;
 
 $(document).ready(function() {
   var newMap = new Map();
+  var portland = newMap.getLocation('portland');
   $("#city-form").submit(function(event) {
     event.preventDefault();
     var inputCity = $('#city').val();
@@ -11,8 +12,11 @@ $(document).ready(function() {
       initMap(location);
     }, 500);
   });
-});
 
+  setTimeout(function() {
+    initMap(portland);
+  }, 500);
+});
 
 function initMap(location) {
   var myLatLng = {lat: location[0], lng: location[1]};
