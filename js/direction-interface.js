@@ -6,9 +6,11 @@ $(document).ready(function() {
     event.preventDefault();
     var origin = $('#origin').val();
     var destination = $('#destination').val();
+    var mode = "driving";
     setTimeout(function() {
       getMap(origin, destination);
     }, 500);
+    var result = newDirection.getRoute(origin, destination, mode);
   });
 });
 
@@ -18,7 +20,6 @@ function getMap(origin, destination) {
     center: new google.maps.LatLng(45.5230622, -122.6764816),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  // Draw the map
   var mapObject = new google.maps.Map(document.getElementById("output"), myOptions);
   var directionsService = new google.maps.DirectionsService();
   var directionsRequest = {
@@ -27,7 +28,6 @@ function getMap(origin, destination) {
     travelMode: google.maps.DirectionsTravelMode.DRIVING,
     unitSystem: google.maps.UnitSystem.METRIC
   };
-
   directionsService.route(
     directionsRequest, function(response, status) {
       if (status == google.maps.DirectionsStatus.OK) {

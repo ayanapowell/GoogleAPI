@@ -23,6 +23,7 @@ function Direction() {
 //   var array = [];
 //   $.get('https://maps.googleapis.com/maps/api/directions/json?origin=' + origin + '&destination=' + destination + '&mode=' + mode + '&key=' + mapApiKey).then(function(response) {
 //     console.log(JSON.stringify(response));
+//     console.log(JSON.stringify(response));
 //   });
 //   return;
 // }

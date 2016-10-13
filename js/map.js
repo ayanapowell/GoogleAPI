@@ -7,8 +7,6 @@ Map.prototype.getLocation = function(city) {
   $.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + city + ',+' + '&key=' + mapApiKey).then(function(response) {
     lat = response.results[0].geometry.location.lat;
     lng = response.results[0].geometry.location.lng;
-    console.log(lat);
-    console.log(lng);
     array.push(lat, lng);
   });
   return array;

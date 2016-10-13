@@ -15,24 +15,18 @@
       <h1 class="jumbotron">Splore Google API's</h1>
       <ul class="nav nav-tabs">
         <li role="presentation"><a href="index.html">Map</a></li>
-        <li role="presentation" class="active"><a href="directions.html">Directions</a></li>
-        <li role="presentation"><a href="book.html">Books</a></li>
+        <li role="presentation"><a href="direction.html">Directions</a></li>
+        <li role="presentation" class="active"><a href="#">Books</a></li>
       </ul>
-      <form id="direction-form" class="well">
+      <form id="books-form" class="well">
         <div class="form-group">
-          <label for="origin">Enter a starting address (with city, state)</label>
-          <input type="text" class="form-control" id="origin">
-        </div>
-        <div class="form-group">
-          <label for="destination">Enter a destination address (with city, state)</label>
-          <input type="text" class="form-control" id="destination">
+          <label for="search">Search GoogleBooks!</label>
+          <input type="text" class="form-control" id="search">
         </div>
         <button type="submit" class="btn btn-default center-block">SPLORE</button>
       </form>
-      <br>
-      <div id="error"></div>
-      <br>
-      <div id="output"></div>
+      <div class="all_books">
+      </div>
     </div>
   </body>
 </html>
