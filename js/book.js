@@ -33,7 +33,11 @@ Book.prototype.searchBooks = function(search) {
       var image = item.volumeInfo.imageLinks.thumbnail;
       books.push([title, authors, description, rating, image]);
     });
-    that.listBooks(books);
+    // if (books.length === 0) {
+    //   alert('no searches match!');
+    // } else {
+      that.listBooks(books);
+    // }
   });
 }
 
