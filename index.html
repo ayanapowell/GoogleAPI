@@ -13,15 +13,22 @@
   <body>
     <div class="container">
       <h1 class="jumbotron">Splore Cities</h1>
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Map</a></li>
+        <li role="presentation"><a href="directions.html">Directions</a></li>
+      </ul>
         <form id="city-form" class="well">
           <div class="form-group">
-            <label for="city">Enter city OR address</label>
+            <label for="city">Enter a location of your choice (city, state, address)</label>
             <input type="text" class="form-control" id="city">
           </div>
           <button type="submit" class="btn btn-default center-block">SPLORE</button>
         </form>
+        <br>
+        <h3 class="text"><span>Green lines</span> mark hipster bike-friendly lanes!</h3>
+        <br>
         <div id="map"></div>
-        <!-- <div id="output"></div> -->
+        <div id="output"></div>
       </div>
     </body>
 </html>

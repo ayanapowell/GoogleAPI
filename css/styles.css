@@ -1,3 +1,7 @@
+body {
+  font-family: monospace;
+}
+
 h1 {
   text-align: center;
 }
@@ -5,4 +9,17 @@ h1 {
 #map, #output {
   height: 500px;
   width: 100%;
+}
+
+h3.text {
+  display: none;
+}
+
+.text span {
+  font-style: italic;
+  color: green;
+}
+
+.show {
+  display: block;
 }

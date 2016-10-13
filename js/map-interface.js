@@ -7,6 +7,7 @@ $(document).ready(function() {
     var inputCity = $('#city').val();
     var location = newMap.getLocation(inputCity);
     setTimeout(function() {
+      $('.text').addClass('show');
       initMap(location);
     }, 500);
   });
@@ -25,4 +26,6 @@ function initMap(location) {
      position: myLatLng,
      title: 'Hello World!'
    });
+   var bikeLayer = new google.maps.BicyclingLayer();
+   bikeLayer.setMap(map);
    }
