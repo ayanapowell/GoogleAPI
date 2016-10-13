@@ -23,3 +23,9 @@ h3.text {
 .show {
   display: block;
 }
+
+#error {
+  color: red;
+  text-align: center;
+  font-size: 24px;
+}
