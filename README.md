@@ -1,6 +1,6 @@
 # Google Map API
 
-#### _10-11-16_
+#### _October 11, 2016_
 
 #### By _**Aimen Khakwani & Ayana Powell**_
 
